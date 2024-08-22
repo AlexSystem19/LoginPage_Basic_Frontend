@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginPage_Basic_Frontend.MainPage" Background="#151519">
+
+    <VerticalStackLayout Margin="15" Padding="30,60,30,30"
+                         Spacing="13"
+                         VerticalOptions="End">
+        <Image Source="logouxdev.png" WidthRequest="300"/>
+        <Label Text="Por favor inicia sesión" FontSize="30" TextColor="AntiqueWhite"/>
+        <Label Text="Usuario" TextColor="White"/>
+        <Frame Margin="0" Padding="0" CornerRadius="16">
+            <Entry TextColor="GreenYellow" BackgroundColor="#18181B" HorizontalTextAlignment="Center"
+                   Placeholder="Nombre o Dni"/>
+        </Frame>        
+        <Label Text="Contraseña" TextColor="White"/>
+        <Frame Margin="0" Padding="0" CornerRadius="16">
+            <Entry TextColor="GreenYellow" BackgroundColor="#18181B" IsPassword="True" HorizontalTextAlignment="Center"
+                   Placeholder="..."/>
+        </Frame>
+        <Button Text="Ingresar" BackgroundColor="#0094FF" TextColor="White" CornerRadius="16" x:Name="btn_ingreso" Clicked="btn_ingreso_Clicked"/>
+        <Button Text="Registrar" BackgroundColor="Green" TextColor="White" CornerRadius="16" x:Name="btn_registrar" Clicked="btn_registrar_Clicked"/>
+        <Button Text="Salir" BackgroundColor="Transparent" TextColor="White" CornerRadius="16" BorderColor="White" x:Name="bt_sallir" Clicked="bt_sallir_Clicked"/>
+        <Label Text="2023-2024 | A6"
+               HorizontalOptions="Center"
+                TextColor="Gray"/>
+    </VerticalStackLayout>
+</ContentPage>
