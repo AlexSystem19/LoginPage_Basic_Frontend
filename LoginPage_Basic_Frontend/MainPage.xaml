@@ -23,6 +23,7 @@
         <Button Text="Salir" BackgroundColor="Transparent" TextColor="White" CornerRadius="16" BorderColor="White" x:Name="bt_sallir" Clicked="bt_sallir_Clicked"/>
         <Label Text="2023-2024 | A6"
                HorizontalOptions="Center"
-                TextColor="Gray"/>
+                TextColor="Gray"
+               FontSize="11"/>
     </VerticalStackLayout>
 </ContentPage>
